@@ -17,7 +17,7 @@ namespace Snake
 
 
 
-            //StatusBar.ShowInfo("test!");
+            
 
 
             Menu menu = new Menu();
@@ -25,8 +25,6 @@ namespace Snake
 
 
 
-            //game.SetupBoard();
-            // game.Start();
 
 
 

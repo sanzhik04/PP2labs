@@ -23,7 +23,7 @@ namespace Snake
     
     public class Game
     {
-        public static int interval = 150;
+        public static int interval = 300;
         public static int boardW = 35;
         public static int boardH = 35;
         [XmlElement]
@@ -60,17 +60,7 @@ namespace Snake
             Console.CursorVisible = false;
         }
         
-        /*public void Save()
-        {
-            
-            using (FileStream fs = new FileStream("Game.xml", FileMode.OpenOrCreate, FileAccess.ReadWrite))
-            {
-                XmlSerializer xs = new XmlSerializer(typeof(Game));
-                xs.Serialize(fs, this);
-            }
-
-        }
-        */
+        
 
        
 
@@ -133,7 +123,11 @@ namespace Snake
                
                 
                 worm.Move();
-                
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.SetCursorPosition(15, 24);
+                Console.WriteLine("              ");
+                Console.SetCursorPosition(15, 24);
+                Console.WriteLine("SCORE:{0}", score);
 
 
 
@@ -145,11 +139,7 @@ namespace Snake
                     
                     
                     score++;
-                    Console.ForegroundColor = ConsoleColor.Blue;
-                    Console.SetCursorPosition(15, 24);
-                    Console.WriteLine("              ");
-                    Console.SetCursorPosition(15, 24);
-                    Console.WriteLine("SCORE:{0}", score);
+                    
 
                     
                 }
@@ -175,41 +165,37 @@ namespace Snake
                 }
                 
 
-                //Console.Clear();
+               
 
                 
 
 
                 
 
-                if (score == 10)
+                if (score == 3)
                 {
-                    lvlcnt++;
+                    
                     wall.CleanBody();
                     
-                    if (lvlcnt == 2)
-                    {
+                    
                         interval = 200;
                         gameLevel = GameLevel.Second;
                         wall.LoadLevel(GameLevel.Second);
-
+                        
                         Console.Clear();
                         wall.Draw();
-                        score = 0;
-                        food.CreateFood(wall.body, worm.body);
+                        
+                        food.body[0] = food.CreateFood(wall.body, worm.body);
                         worm.body.Clear();
                         worm.body.Add(new Point { X = 24, Y = 16 });
-                        continue;
-                    }
+                    score++;
+                    continue;
+                    
+                    
                     
 
                 }
                 
-                    Console.ForegroundColor = ConsoleColor.Blue;
-                    Console.SetCursorPosition(15, 24);
-                    Console.WriteLine("              ");
-                    Console.SetCursorPosition(15, 24);
-                    Console.WriteLine("SCORE:{0}", score);
 
 
 
@@ -229,12 +215,13 @@ namespace Snake
 
         public void Save()
         {
-            
 
+            
             StreamWriter sw = new StreamWriter("Game.xml", false);
             XmlSerializer xs = new XmlSerializer(typeof(Game));
             xs.Serialize(sw, this);
             sw.Close();
+
         }
 
 
@@ -251,25 +238,42 @@ namespace Snake
             switch (pressedButton.Key)
             {
                 case ConsoleKey.UpArrow:
+                    if(worm.DX == 0 && worm.DY == 1)
+                    {
+                        break;
+                    }
                     worm.DX = 0;
                     worm.DY = -1;
+                    
                     break;
                 case ConsoleKey.DownArrow:
+                    if (worm.DX == 0 && worm.DY == -1)
+                    {
+                        break;
+                    }
                     worm.DX = 0;
                     worm.DY = 1;
                     break;
                 case ConsoleKey.LeftArrow:
+                    if (worm.DX == 1 && worm.DY == 0)
+                    {
+                        break;
+                    }
                     worm.DX = -1;
                     worm.DY = 0;
                     break;
                 case ConsoleKey.RightArrow:
+                    if (worm.DX == -1 && worm.DY == 0)
+                    {
+                        break;
+                    }
                     worm.DX = 1;
                     worm.DY = 0;
                     break;
                 case ConsoleKey.Escape:
                     
                     Console.Clear();
-                    //stop();
+                    
                     return;
                     break;
                 case ConsoleKey.Spacebar:

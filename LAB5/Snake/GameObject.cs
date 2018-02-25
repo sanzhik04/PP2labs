@@ -12,7 +12,7 @@ namespace Snake
     {
         public List<Point> body { get; set; }
         public char sign { get; set; }
-        public ConsoleColor color { get; }
+        public ConsoleColor color { get; set; }
 
         public GameObject()
         {

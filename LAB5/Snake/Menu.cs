@@ -10,9 +10,8 @@ namespace Snake
 {
     class Menu
     {
-        public static FileStream fs = new FileStream("Game.xml", FileMode.Open, FileAccess.Read);
-        public static XmlSerializer xs = new XmlSerializer(typeof(Game));
-        string[] items = { "New Game", "Load Game", "Save Game", "Settings", "Exit" };
+         
+        string[] items = { "New Game", "Load Game", "Exit" };
         int selectedItemIndex = 0;
 
         void NewGame()
@@ -34,10 +33,11 @@ namespace Snake
         void LoadGame()
         {
             Console.Clear();
-            
+            FileStream fs = new FileStream("Game.xml", FileMode.Open, FileAccess.Read);
+            XmlSerializer xs = new XmlSerializer(typeof(Game));
             Game game = xs.Deserialize(fs) as Game;
-
-            //game = new Game();
+            fs.Close();
+            
             game.SetupBoard();
             game.Start();
             while (true)
@@ -48,15 +48,9 @@ namespace Snake
             }
         }
 
-        void SaveGame()
-        {
-            StatusBar.ShowInfo("SaveGame!");
-        }
+       
 
-        void Settings()
-        {
-            StatusBar.ShowInfo("Settings!");
-        }
+       
 
         void Exit()
         {
@@ -78,8 +72,9 @@ namespace Snake
                 }
                 Console.WriteLine();
             }
-
-
+        }
+        public void Draw1()
+        {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.SetCursorPosition(0, (Game.boardH - 25) / 2);
 
@@ -93,15 +88,17 @@ namespace Snake
                 {
                     Console.ForegroundColor = ConsoleColor.Yellow;
                 }
-                Console.WriteLine(String.Format("          {0}. {1}", i, items[i]));
+                Console.WriteLine(String.Format("           {1}", i, items[i]));
             }
         }
+        
 
         public void Process()
         {
+            Draw();
             while (true)
             {
-                Draw();
+                Draw1();
                 ConsoleKeyInfo pressedButton = Console.ReadKey();
                 switch (pressedButton.Key)
                 {
@@ -129,14 +126,12 @@ namespace Snake
                             case 1:
                                 LoadGame();
                                 break;
+                            
+                            
+                                
+                                
                             case 2:
-                                SaveGame();
-                                break;
-                            case 3:
-                                Settings();
-                                break;
-                            case 4:
-                                Exit();
+                                return;
                                 break;
                         }
 

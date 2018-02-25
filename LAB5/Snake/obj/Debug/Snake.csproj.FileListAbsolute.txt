@@ -5,3 +5,10 @@ C:\Users\Santa sheikh\source\repos\Snake_Project\Snake\obj\Debug\Snake.csprojRes
 C:\Users\Santa sheikh\source\repos\Snake_Project\Snake\obj\Debug\Snake.csproj.CoreCompileInputs.cache
 C:\Users\Santa sheikh\source\repos\Snake_Project\Snake\obj\Debug\Snake.exe
 C:\Users\Santa sheikh\source\repos\Snake_Project\Snake\obj\Debug\Snake.pdb
+C:\Users\Santa sheikh\Desktop\PP2labs\LAB5\Snake\bin\Debug\Snake.exe.config
+C:\Users\Santa sheikh\Desktop\PP2labs\LAB5\Snake\bin\Debug\Snake.exe
+C:\Users\Santa sheikh\Desktop\PP2labs\LAB5\Snake\bin\Debug\Snake.pdb
+C:\Users\Santa sheikh\Desktop\PP2labs\LAB5\Snake\obj\Debug\Snake.csprojResolveAssemblyReference.cache
+C:\Users\Santa sheikh\Desktop\PP2labs\LAB5\Snake\obj\Debug\Snake.csproj.CoreCompileInputs.cache
+C:\Users\Santa sheikh\Desktop\PP2labs\LAB5\Snake\obj\Debug\Snake.exe
+C:\Users\Santa sheikh\Desktop\PP2labs\LAB5\Snake\obj\Debug\Snake.pdb
