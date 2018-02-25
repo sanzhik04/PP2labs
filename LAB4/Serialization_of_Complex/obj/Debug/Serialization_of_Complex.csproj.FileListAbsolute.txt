@@ -1,0 +1,7 @@
+C:\Users\Santa sheikh\source\repos\Serialization_of_Complex_Project\Serialization_of_Complex\bin\Debug\Serialization_of_Complex.exe.config
+C:\Users\Santa sheikh\source\repos\Serialization_of_Complex_Project\Serialization_of_Complex\bin\Debug\Serialization_of_Complex.exe
+C:\Users\Santa sheikh\source\repos\Serialization_of_Complex_Project\Serialization_of_Complex\bin\Debug\Serialization_of_Complex.pdb
+C:\Users\Santa sheikh\source\repos\Serialization_of_Complex_Project\Serialization_of_Complex\obj\Debug\Serialization_of_Complex.csprojResolveAssemblyReference.cache
+C:\Users\Santa sheikh\source\repos\Serialization_of_Complex_Project\Serialization_of_Complex\obj\Debug\Serialization_of_Complex.csproj.CoreCompileInputs.cache
+C:\Users\Santa sheikh\source\repos\Serialization_of_Complex_Project\Serialization_of_Complex\obj\Debug\Serialization_of_Complex.exe
+C:\Users\Santa sheikh\source\repos\Serialization_of_Complex_Project\Serialization_of_Complex\obj\Debug\Serialization_of_Complex.pdb

@@ -61,6 +61,7 @@ namespace MinPrime
             StreamWriter sw = new StreamWriter(sf);
             sw.WriteLine(Minimum);
             sw.Close();
+            sf.Close();
 
 
             

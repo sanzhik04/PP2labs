@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Worm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <body>
+    <Point>
+      <X>17</X>
+      <Y>19</Y>
+    </Point>
+    <Point>
+      <X>16</X>
+      <Y>19</Y>
+    </Point>
+    <Point>
+      <X>15</X>
+      <Y>19</Y>
+    </Point>
+  </body>
+  <sign>42</sign>
+  <DX>1</DX>
+  <DY>0</DY>
+</Worm>
