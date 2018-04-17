@@ -15,10 +15,12 @@ namespace Battleship
         public PlayerPanel p1, p2;
         public Color Color1 = Color.Blue;
         public Color Color2 = Color.White;
-        public GameLogic()
+        
+        
+        public GameLogic(TurnDelegate GameDlg)
         {
-            p1 = new PlayerPanel(PanelPosition.Left, PlayerType.Human, MakeBotTurn,Color1);
-            p2 = new PlayerPanel(PanelPosition.Right, PlayerType.Bot, MakeBotTurn,Color2);
+            p1 = new PlayerPanel(PanelPosition.Left, PlayerType.Human, MakeBotTurn, GameDlg, Color1);
+            p2 = new PlayerPanel(PanelPosition.Right, PlayerType.Bot, MakeBotTurn, GameDlg, Color2);
         }
 
         void MakeBotTurn()
@@ -26,12 +28,17 @@ namespace Battleship
             Random rnd = new Random();
             int i = rnd.Next(0, 10);
             int j = rnd.Next(0, 10);
+            
             while (p1.brain.Process2(string.Format("{0}_{1}", i, j)))
             {
                 Thread.Sleep(2000);
-                i = rnd.Next(0, 10);
-                j = rnd.Next(0, 10);
+                i = rnd.Next(0,10);
+                j = rnd.Next(0,10);
+                
+
             }
         }
+
+        
     }
 }

@@ -27,30 +27,21 @@ namespace Battleship
         int cellW = 20;
         PanelPosition panelPosition;
         PlayerType playerType;
-        TurnDelegate tDelegate;
+        TurnDelegate tDelegate, gDelegate;
         Color ColorBot;
 
-        public PlayerPanel(PanelPosition panelPosition, PlayerType playerType,TurnDelegate tDelegate,Color ColorBot)
+        public PlayerPanel(PanelPosition panelPosition, PlayerType playerType,TurnDelegate tDelegate, TurnDelegate gDelegate, Color ColorBot)
         {
             this.panelPosition = panelPosition;
             this.playerType = playerType;
             this.tDelegate = tDelegate;
+            this.gDelegate = gDelegate;
             this.ColorBot = ColorBot;
-
             Initialize();
 
-            /*
-            if (playerType == PlayerType.Human)
-            {
-                while (brain.stIndex < brain.st.Length - 1)
-                {
-                    int row = rnd1.Next(0, 10);
-                    int column = rnd1.Next(0, 10);
-                    string msg = string.Format("{0}_{1}", row, column);
-                    brain.Process(msg);
-                }
-            }
-            */
+            
+            
+            
 
             
         }
@@ -65,6 +56,17 @@ namespace Battleship
                 {
                     int row = rnd2.Next(0, 10);
                     int column = rnd2.Next(0, 10);
+                    string msg = string.Format("{0}_{1}", row, column);
+                    brain.Process(msg);
+                }
+            }
+
+            if (playerType == PlayerType.Human)
+            {
+                while (brain.stIndex < brain.st.Length - 1)
+                {
+                    int row = rnd1.Next(0, 10);
+                    int column = rnd1.Next(0, 10);
                     string msg = string.Format("{0}_{1}", row, column);
                     brain.Process(msg);
                 }
@@ -101,7 +103,6 @@ namespace Battleship
         private void Btn_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            
             if (brain.stIndex < brain.st.Length - 1)
             {
                 brain.Process(btn.Name);
@@ -113,8 +114,10 @@ namespace Battleship
                     tDelegate.Invoke();
                 }
             }
+            gDelegate.Invoke();
+
         }
-        
+
 
         private void ChangeButton(CellState[,] map)
         {

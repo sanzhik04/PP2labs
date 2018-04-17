@@ -23,6 +23,7 @@ namespace Battleship
 
     public class Brain
     {
+        public int leftShips = 20;
 
         public ShipType[] st = { ShipType.D1, ShipType.D1, ShipType.D1, ShipType.D1,
                           ShipType.D2, ShipType.D2, ShipType.D2,
@@ -102,9 +103,43 @@ namespace Battleship
 
                         if (killed)
                         {
+
                             foreach (ShipPoint p in units[index].body)
                             {
                                 map[p.X, p.Y] = CellState.killed;
+                                if (IsGoodCell2(p.X, p.Y + 1))
+                                {
+                                    map[p.X, p.Y + 1] = CellState.missed;
+                                }
+                                if (IsGoodCell2(p.X - 1, p.Y + 1))
+                                {
+                                    map[p.X - 1, p.Y + 1] = CellState.missed;
+                                }
+                                if (IsGoodCell2(p.X + 1, p.Y + 1))
+                                {
+                                    map[p.X + 1, p.Y + 1] = CellState.missed;
+                                }
+                                if (IsGoodCell2(p.X + 1, p.Y))
+                                {
+                                    map[p.X + 1, p.Y] = CellState.missed;
+                                }
+                                if (IsGoodCell2(p.X - 1, p.Y))
+                                {
+                                    map[p.X - 1, p.Y] = CellState.missed;
+                                }
+                                if (IsGoodCell2(p.X - 1, p.Y - 1))
+                                {
+                                    map[p.X - 1, p.Y - 1] = CellState.missed;
+                                }
+                                if (IsGoodCell2(p.X + 1, p.Y - 1))
+                                {
+                                    map[p.X + 1, p.Y - 1] = CellState.missed;
+                                }
+                                if (IsGoodCell2(p.X, p.Y - 1))
+                                {
+                                    map[p.X, p.Y - 1] = CellState.missed;
+                                }
+                                leftShips--;
                             }
                         }
                     }
@@ -141,6 +176,13 @@ namespace Battleship
             if (j < 0 || j > 9) return false;
             
             return map[i, j] == CellState.empty;
+        }
+        private bool IsGoodCell2(int i, int j)
+        {
+            if (i < 0 || i > 9) return false;
+            if (j < 0 || j > 9) return false;
+
+            return map[i, j] == CellState.aura;
         }
 
         private bool IsGoodLocated(Ship ship)

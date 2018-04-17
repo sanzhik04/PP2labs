@@ -35,6 +35,7 @@
             this.START = new System.Windows.Forms.Button();
             this.Horizontal = new System.Windows.Forms.Button();
             this.Vertical = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,11 +100,21 @@
             this.Vertical.UseVisualStyleBackColor = true;
             this.Vertical.Click += new System.EventHandler(this.Vertical_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(65, 360);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Horizontal";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 453);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Vertical);
             this.Controls.Add(this.Horizontal);
             this.Controls.Add(this.START);
@@ -127,6 +138,7 @@
         private System.Windows.Forms.Button START;
         private System.Windows.Forms.Button Horizontal;
         private System.Windows.Forms.Button Vertical;
+        private System.Windows.Forms.Label label1;
     }
 }
 
