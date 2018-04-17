@@ -1,0 +1,10 @@
+C:\Users\Santa sheikh\source\repos\LAB10_Project\LAB10\bin\Debug\LAB10.exe.config
+C:\Users\Santa sheikh\source\repos\LAB10_Project\LAB10\bin\Debug\LAB10.exe
+C:\Users\Santa sheikh\source\repos\LAB10_Project\LAB10\bin\Debug\LAB10.pdb
+C:\Users\Santa sheikh\source\repos\LAB10_Project\LAB10\obj\Debug\LAB10.csprojResolveAssemblyReference.cache
+C:\Users\Santa sheikh\source\repos\LAB10_Project\LAB10\obj\Debug\LAB10.Form1.resources
+C:\Users\Santa sheikh\source\repos\LAB10_Project\LAB10\obj\Debug\LAB10.Properties.Resources.resources
+C:\Users\Santa sheikh\source\repos\LAB10_Project\LAB10\obj\Debug\LAB10.csproj.GenerateResource.Cache
+C:\Users\Santa sheikh\source\repos\LAB10_Project\LAB10\obj\Debug\LAB10.csproj.CoreCompileInputs.cache
+C:\Users\Santa sheikh\source\repos\LAB10_Project\LAB10\obj\Debug\LAB10.exe
+C:\Users\Santa sheikh\source\repos\LAB10_Project\LAB10\obj\Debug\LAB10.pdb

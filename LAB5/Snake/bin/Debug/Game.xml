@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <score>5</score>
+  <score>7</score>
   <lvlcnt>1</lvlcnt>
   <worm>
     <body>
       <Point>
-        <X>2</X>
+        <X>28</X>
         <Y>6</Y>
       </Point>
       <Point>
-        <X>2</X>
-        <Y>5</Y>
+        <X>27</X>
+        <Y>6</Y>
       </Point>
     </body>
     <sign>42</sign>
-    <color>White</color>
-    <DX>0</DX>
-    <DY>1</DY>
+    <color>Blue</color>
+    <DX>1</DX>
+    <DY>0</DY>
   </worm>
   <food>
     <body>
       <Point>
-        <X>10</X>
-        <Y>6</Y>
+        <X>31</X>
+        <Y>19</Y>
       </Point>
     </body>
     <sign>43</sign>
@@ -167,11 +167,15 @@
         <Y>0</Y>
       </Point>
       <Point>
+        <X>34</X>
+        <Y>0</Y>
+      </Point>
+      <Point>
         <X>0</X>
         <Y>1</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>1</Y>
       </Point>
       <Point>
@@ -179,7 +183,7 @@
         <Y>2</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>2</Y>
       </Point>
       <Point>
@@ -223,7 +227,7 @@
         <Y>3</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>3</Y>
       </Point>
       <Point>
@@ -231,7 +235,7 @@
         <Y>4</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>4</Y>
       </Point>
       <Point>
@@ -239,7 +243,7 @@
         <Y>5</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>5</Y>
       </Point>
       <Point>
@@ -247,7 +251,7 @@
         <Y>6</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>6</Y>
       </Point>
       <Point>
@@ -291,7 +295,7 @@
         <Y>7</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>7</Y>
       </Point>
       <Point>
@@ -303,7 +307,7 @@
         <Y>8</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>8</Y>
       </Point>
       <Point>
@@ -315,7 +319,7 @@
         <Y>9</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>9</Y>
       </Point>
       <Point>
@@ -327,7 +331,7 @@
         <Y>10</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>10</Y>
       </Point>
       <Point>
@@ -339,7 +343,7 @@
         <Y>11</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>11</Y>
       </Point>
       <Point>
@@ -391,7 +395,7 @@
         <Y>12</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>12</Y>
       </Point>
       <Point>
@@ -399,7 +403,7 @@
         <Y>13</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>13</Y>
       </Point>
       <Point>
@@ -411,7 +415,7 @@
         <Y>14</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>14</Y>
       </Point>
       <Point>
@@ -423,7 +427,7 @@
         <Y>15</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>15</Y>
       </Point>
       <Point>
@@ -435,7 +439,7 @@
         <Y>16</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>16</Y>
       </Point>
       <Point>
@@ -479,7 +483,7 @@
         <Y>17</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>17</Y>
       </Point>
       <Point>
@@ -487,7 +491,7 @@
         <Y>18</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>18</Y>
       </Point>
       <Point>
@@ -495,7 +499,7 @@
         <Y>19</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>19</Y>
       </Point>
       <Point>
@@ -503,7 +507,7 @@
         <Y>20</Y>
       </Point>
       <Point>
-        <X>33</X>
+        <X>34</X>
         <Y>20</Y>
       </Point>
       <Point>
@@ -642,6 +646,10 @@
         <X>33</X>
         <Y>21</Y>
       </Point>
+      <Point>
+        <X>34</X>
+        <Y>21</Y>
+      </Point>
     </body>
     <sign>35</sign>
     <color>White</color>
@@ -652,24 +660,24 @@
     <GameObject xsi:type="Worm">
       <body>
         <Point>
-          <X>2</X>
+          <X>28</X>
           <Y>6</Y>
         </Point>
         <Point>
-          <X>2</X>
-          <Y>5</Y>
+          <X>27</X>
+          <Y>6</Y>
         </Point>
       </body>
       <sign>42</sign>
-      <color>White</color>
-      <DX>0</DX>
-      <DY>1</DY>
+      <color>Blue</color>
+      <DX>1</DX>
+      <DY>0</DY>
     </GameObject>
     <GameObject xsi:type="Food">
       <body>
         <Point>
-          <X>10</X>
-          <Y>6</Y>
+          <X>31</X>
+          <Y>19</Y>
         </Point>
       </body>
       <sign>43</sign>
@@ -814,11 +822,15 @@
           <Y>0</Y>
         </Point>
         <Point>
+          <X>34</X>
+          <Y>0</Y>
+        </Point>
+        <Point>
           <X>0</X>
           <Y>1</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>1</Y>
         </Point>
         <Point>
@@ -826,7 +838,7 @@
           <Y>2</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>2</Y>
         </Point>
         <Point>
@@ -870,7 +882,7 @@
           <Y>3</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>3</Y>
         </Point>
         <Point>
@@ -878,7 +890,7 @@
           <Y>4</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>4</Y>
         </Point>
         <Point>
@@ -886,7 +898,7 @@
           <Y>5</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>5</Y>
         </Point>
         <Point>
@@ -894,7 +906,7 @@
           <Y>6</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>6</Y>
         </Point>
         <Point>
@@ -938,7 +950,7 @@
           <Y>7</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>7</Y>
         </Point>
         <Point>
@@ -950,7 +962,7 @@
           <Y>8</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>8</Y>
         </Point>
         <Point>
@@ -962,7 +974,7 @@
           <Y>9</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>9</Y>
         </Point>
         <Point>
@@ -974,7 +986,7 @@
           <Y>10</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>10</Y>
         </Point>
         <Point>
@@ -986,7 +998,7 @@
           <Y>11</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>11</Y>
         </Point>
         <Point>
@@ -1038,7 +1050,7 @@
           <Y>12</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>12</Y>
         </Point>
         <Point>
@@ -1046,7 +1058,7 @@
           <Y>13</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>13</Y>
         </Point>
         <Point>
@@ -1058,7 +1070,7 @@
           <Y>14</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>14</Y>
         </Point>
         <Point>
@@ -1070,7 +1082,7 @@
           <Y>15</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>15</Y>
         </Point>
         <Point>
@@ -1082,7 +1094,7 @@
           <Y>16</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>16</Y>
         </Point>
         <Point>
@@ -1126,7 +1138,7 @@
           <Y>17</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>17</Y>
         </Point>
         <Point>
@@ -1134,7 +1146,7 @@
           <Y>18</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>18</Y>
         </Point>
         <Point>
@@ -1142,7 +1154,7 @@
           <Y>19</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>19</Y>
         </Point>
         <Point>
@@ -1150,7 +1162,7 @@
           <Y>20</Y>
         </Point>
         <Point>
-          <X>33</X>
+          <X>34</X>
           <Y>20</Y>
         </Point>
         <Point>
@@ -1287,6 +1299,10 @@
         </Point>
         <Point>
           <X>33</X>
+          <Y>21</Y>
+        </Point>
+        <Point>
+          <X>34</X>
           <Y>21</Y>
         </Point>
       </body>

@@ -24,6 +24,7 @@ namespace Snake
         {
             Point newHeadPos = new Point { X = body[0].X + DX, Y = body[0].Y + DY };
             Console.SetCursorPosition(body[body.Count - 1].X, body[body.Count - 1].Y);
+            Console.ForegroundColor = ConsoleColor.Black;
             Console.Write(" ");
 
             

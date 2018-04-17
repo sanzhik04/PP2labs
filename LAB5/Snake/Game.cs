@@ -72,7 +72,7 @@ namespace Snake
             gameLevel = GameLevel.First;
 
             worm = new Worm(new Point { X = 10, Y = 10 },
-                            ConsoleColor.White, '*');
+                            ConsoleColor.Blue, '*');
             food = new Food(new Point { X = 20, Y = 10},
                            ConsoleColor.White, '+');
             wall = new Wall(null, ConsoleColor.White, '#');
@@ -123,9 +123,11 @@ namespace Snake
                
                 
                 worm.Move();
-                Console.ForegroundColor = ConsoleColor.Blue;
+                
+                Console.ForegroundColor = ConsoleColor.Black;
                 Console.SetCursorPosition(15, 24);
-                Console.WriteLine("              ");
+                Console.WriteLine("        ", score);
+                Console.ForegroundColor = ConsoleColor.Blue;
                 Console.SetCursorPosition(15, 24);
                 Console.WriteLine("SCORE:{0}", score);
 
@@ -135,9 +137,10 @@ namespace Snake
                 if (worm.body[0].Equals(food.body[0]))
                 {
                     worm.body.Add(new Point { X = food.body[0].X, Y = food.body[0].Y });
+                    
                     food.body[0] = food.CreateFood(wall.body, worm.body);
-                    
-                    
+                    food.Draw();
+
                     score++;
                     
 
@@ -152,8 +155,9 @@ namespace Snake
                         {
                             Console.Clear();
                             Console.WriteLine("GAME OVER!!!");
+                            Console.WriteLine("Your Score is {0}", score);
                             isAlive = false;
-                            Console.ForegroundColor = ConsoleColor.Black;
+                            Console.ForegroundColor = ConsoleColor.Black;  
                             
                            
                             
@@ -164,6 +168,10 @@ namespace Snake
                     }
                 }
                 
+               
+
+                
+                
 
                
 
@@ -172,7 +180,7 @@ namespace Snake
 
                 
 
-                if (score == 3)
+                if (score == 5)
                 {
                     
                     wall.CleanBody();
@@ -186,6 +194,7 @@ namespace Snake
                         wall.Draw();
                         
                         food.body[0] = food.CreateFood(wall.body, worm.body);
+                    food.Draw(); 
                         worm.body.Clear();
                         worm.body.Add(new Point { X = 24, Y = 16 });
                     score++;
@@ -195,13 +204,14 @@ namespace Snake
                     
 
                 }
+
+
+
+
                 
-
-
-
-
                 worm.Draw();
-                food.Draw();
+               
+                
                 Thread.Sleep(Game.interval);
                 
             }

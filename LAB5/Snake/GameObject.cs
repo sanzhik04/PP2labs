@@ -37,8 +37,21 @@ namespace Snake
                 Console.SetCursorPosition(p.X, p.Y);
                 Console.Write(sign);
                 
+
             }
         }
+        public void Clear()
+        {
+            Console.ForegroundColor = ConsoleColor.Black;
+            foreach (Point p in body)
+            {
+
+                Console.SetCursorPosition(p.X, p.Y);
+                Console.Write(sign);
+
+            }
+        }
+
 
         /*public void Save()
         {
@@ -66,7 +79,7 @@ namespace Snake
             return res;
         }
         */
-        
+
 
 
 
