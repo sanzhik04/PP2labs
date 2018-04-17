@@ -19,11 +19,12 @@ namespace Battleship
         public List<ShipPoint> body = new List<ShipPoint>();
         
         ShipType type;
-        
+        string Direction;
 
-        public Ship(Point p, ShipType type)
+        public Ship(Point p, ShipType type, string Direction)
         {
             this.type = type;
+            this.Direction = Direction;
             GenerateBody(p);
         }
 
@@ -35,28 +36,53 @@ namespace Battleship
                      body.Add(new ShipPoint { X = p.X, Y = p.Y, PType = PartType.ShipPart });
                     break;
                 case ShipType.D2:
-
-                    for (int i = 0; i < 2; ++i)
+                    if (Direction == "Horizontal")
                     {
-                        body.Add(new ShipPoint { X = p.X + i, Y = p.Y, PType = PartType.ShipPart });
+                        for (int i = 0; i < 2; ++i)
+                        {
+                            body.Add(new ShipPoint { X = p.X + i, Y = p.Y, PType = PartType.ShipPart });
+                        }
+                    }
+                    if(Direction == "Vertical")
+                    {
+                        for (int i = 0; i < 2; ++i)
+                        {
+                            body.Add(new ShipPoint { X = p.X, Y = p.Y+i, PType = PartType.ShipPart });
+                        }
                     }
                     break;
                 case ShipType.D3:
-                    
+                    if (Direction == "Horizontal")
+                    {
                         for (int i = 0; i < 3; ++i)
                         {
                             body.Add(new ShipPoint { X = p.X + i, Y = p.Y, PType = PartType.ShipPart });
                         }
-                    
-                   
-                    
+                    }
+                    if (Direction == "Vertical")
+                    {
+                        for (int i = 0; i < 3; ++i)
+                        {
+                            body.Add(new ShipPoint { X = p.X, Y = p.Y + i, PType = PartType.ShipPart });
+                        }
+                    }
                     break;
                 case ShipType.D4:
-                    
+                    if (Direction == "Horizontal")
+                    {
                         for (int i = 0; i < 4; ++i)
                         {
                             body.Add(new ShipPoint { X = p.X + i, Y = p.Y, PType = PartType.ShipPart });
                         }
+                    }
+                    if (Direction == "Vertical")
+                    {
+                        for (int i = 0; i < 4; ++i)
+                        {
+                            body.Add(new ShipPoint { X = p.X, Y = p.Y + i, PType = PartType.ShipPart });
+                        }
+                    }
+                   
                     
                   
 

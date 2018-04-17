@@ -60,13 +60,13 @@
             // startToolStripMenuItem
             // 
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.startToolStripMenuItem.Text = "Start";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // START
@@ -87,7 +87,7 @@
             this.Horizontal.TabIndex = 4;
             this.Horizontal.Text = "Horizontal";
             this.Horizontal.UseVisualStyleBackColor = true;
-            
+            this.Horizontal.Click += new System.EventHandler(this.Horizontal_Click);
             // 
             // Vertical
             // 
@@ -97,7 +97,7 @@
             this.Vertical.TabIndex = 5;
             this.Vertical.Text = "Vertical";
             this.Vertical.UseVisualStyleBackColor = true;
-            
+            this.Vertical.Click += new System.EventHandler(this.Vertical_Click);
             // 
             // Form1
             // 

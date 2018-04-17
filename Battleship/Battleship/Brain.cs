@@ -33,7 +33,7 @@ namespace Battleship
 
         CellState[,] map = new CellState[10, 10];
         List<Ship> units = new List<Ship>();
-       
+         public string Direction = "Horizontal";
         MyDelegate invoker;
         public Brain(MyDelegate invoker)
         {
@@ -228,7 +228,7 @@ namespace Battleship
             if (stIndex + 1 < st.Length)
             {
                 stIndex++;
-                Ship ship = new Ship(p, st[stIndex]);
+                Ship ship = new Ship(p, st[stIndex],Direction);
                 if (IsGoodLocated(ship)) {
                     units.Add(ship);
                     MakeAura(ship);

@@ -29,6 +29,15 @@ namespace Battleship
             gl.p2.CreateBotShips();
         }
 
-        
+        private void Horizontal_Click(object sender, EventArgs e)
+        {
+            gl.p1.brain.Direction = "Horizontal";
+
+        }
+
+        private void Vertical_Click(object sender, EventArgs e)
+        {
+            gl.p1.brain.Direction = "Vertical";
+        }
     }
 }
